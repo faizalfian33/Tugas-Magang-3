@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TUGAS KETIGA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div id="heading">
+			<a href="#"><img class="logo" src="img/logo RSUD login.png"></a>
+			<a href="#"><img class="logout" src="img/logout.png"></a>
+			<p>Logout</p>
+		</div>
+		<div id="tengah">
+			
+		</div>
+
+	</header>	
+	<div id="tekst">
+		<p>Selamat Datang</p>
+		<h4>SMK-TI ANNAJIYAH JOMBANG</h4>
+		<h5>VENDOR <br> RSUD JOMBANG</h5>
+	</div>
+		<p id="teks-tengah">Semoga Harimu Menyenangkan</p>
+			<footer>
+				
+			<a href="#"><img class="curriculum" src="img/curriculum.png"></a>
+			<a href="#"><img class="speed" src="img/speed.png"></a>
+			<a href="#"><img class="backup" src="img/backup.png"></a>
+		</div>
+
+			<div class="teks1">
+				<h5>MY ACCOUNT</h5>
+				<p>Informasi tentang personal data dan akses sistem</p>
+
+			</div>	
+
+			<div class="teks2">
+				<h5>GO TO APPLICATION</h5>
+				<p>Pergi ke aplikasi untuk membantu menjalankan aktifitas kerja</p>
+
+			</div>	
+
+			<div class="teks3">
+				<h5>BACKUP DATA</h5>
+				<p>Simpan data aktifasi sistem untuk keamanan data</p>
+
+			</div>		
+			</footer>
+
+		<div id="watch">
+			<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+			<script type="text/javascript">
+		    $(document).ready(function(){
+		        function clock() {
+		          var now = new Date();
+		          var secs = ('0' + now.getSeconds()).slice(-2);
+		          var mins = ('0' + now.getMinutes()).slice(-2);
+		          var hr = now.getHours();
+		          var Time = hr + ":" + mins + ":" + secs;
+		          document.getElementById("watch").innerHTML = Time;
+		          requestAnimationFrame(clock);
+        		}
+       			  requestAnimationFrame(clock);
+    			});
+			</script>
+		</div>
+		<div id="day">
+			<script type='text/javascript'>
+			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+			var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+			var date = new Date();
+			var day = date.getDate();
+			var month = date.getMonth();
+			var thisDay = date.getDay(),
+			    thisDay = myDays[thisDay];
+			var yy = date.getYear();
+			var year = (yy < 1000) ? yy + 1900 : yy;
+			document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+			</script>
+		</div>
+</body>
+</html>
